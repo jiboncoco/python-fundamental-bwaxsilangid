@@ -7,7 +7,21 @@ print("Pembeli membayar :")
 total_pay = input()
 
 # set array & set config
-array_fractions = [100000, 75000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5]
+array_fractions = [100000,
+                   75000,
+                   50000,
+                   20000,
+                   10000,
+                   5000,
+                   2000,
+                   1000,
+                   500,
+                   200,
+                   100,
+                   50,
+                   25,
+                   10,
+                   5]
 last_total = 0
 
 def check_cashback():
@@ -55,7 +69,7 @@ def check_cashback():
 
             # step kedua (jika cashback harus dipecah lebih dari 1x)
             else:
-                if int(last_total) > x:
+                if int(last_total) >= x:
 
                     # penentuan berapa jumlah lembaran atau koin yang akan dibayar
                     mod = int(last_total) / int(x)
